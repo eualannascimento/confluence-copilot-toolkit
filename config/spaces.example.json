@@ -1,0 +1,5 @@
+[
+  { "key": "PROJX", "mode": "read" },
+  { "key": "TIMEENG", "mode": "read" },
+  { "key": "MEUESPACO", "mode": "write" }
+]

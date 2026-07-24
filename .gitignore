@@ -1,0 +1,15 @@
+# Segredos — nunca versionar.
+config/.env
+
+# Space keys reais do usuário — mantenha fora do git por padrão; remova esta
+# linha se quiser versionar (não contém segredos, só códigos de espaço).
+config/spaces.json
+
+# extracted/, drafts/ e .ai-managed-pages.json NÃO estão aqui de propósito:
+# são o conteúdo/estado que vale a pena versionar (histórico de mudanças na
+# documentação, rastreio de páginas da IA). Ignore-os manualmente aqui se o
+# volume de conteúdo ficar grande demais para o seu git remoto.
+
+__pycache__/
+*.pyc
+.venv/
