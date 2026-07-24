@@ -3,6 +3,25 @@
 Toda página nova ou reorganizada por este toolkit segue o mesmo tom, para o
 conjunto da documentação parecer escrito por uma única pessoa:
 
+## Que tipo de página é esta? (Diátaxis)
+
+Antes de escrever ou reorganizar, classifique a página numa destas quatro
+categorias — é o padrão usado por documentações como Kubernetes, GitLab e
+Django, porque cada categoria responde a uma necessidade diferente do leitor
+e mistura mal com as outras:
+
+| Categoria | Responde a | Sinal de que está errada |
+|---|---|---|
+| **Tutorial** | "Me guie do zero até um resultado" | Tem decisões/alternativas no meio — tutorial não escolhe, só executa |
+| **Guia prático (how-to)** | "Como eu faço [tarefa específica]?" | Explica conceito em vez de ir direto ao passo a passo |
+| **Referência** | "Qual o valor/parâmetro/campo exato de X?" | Tem prosa longa em vez de ser consultável rapidamente |
+| **Explicação** | "Por que isso funciona assim?" | Tem passo a passo — isso pertence ao how-to, não aqui |
+
+Se uma página existente mistura duas categorias (comum em documentação
+antiga — ex.: um "como configurar X" que no meio explica a arquitetura
+inteira), isso é candidato a virar duas páginas, não uma reescrita no lugar.
+Proponha a divisão explicitamente ao usuário em vez de decidir sozinho.
+
 - **Direto**: vai ao ponto na primeira frase de cada seção; sem rodeios nem
   introduções genéricas ("Neste documento vamos falar sobre...").
 - **Discreto**: sem adjetivos de autopromoção, sem exagero. Descreve o que é

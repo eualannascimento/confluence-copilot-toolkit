@@ -33,7 +33,8 @@ volta no espaço editável.
   prompt `extrair-espaco` primeiro.
 - **Siga sempre `templates/page-tone-guide.md`** ao escrever ou reescrever
   texto de página — não repita essas regras de tom a cada conversa, apenas
-  aplique o arquivo.
+  aplique o arquivo. Isso inclui classificar cada página segundo Diátaxis
+  (tutorial / guia prático / referência / explicação) antes de reescrever.
 - **Nunca sugira versionar `config/.env`** (contém ou referencia credenciais).
 - **Confirme com o usuário antes de rodar `publish.py create` ou `update`** —
   mesmo com as travas de código acima, publicar no Confluence real deve ser

@@ -153,6 +153,31 @@ esbarrar em limites do servidor on-premise. O script já ajuda com isso:
   restante — o script sai com código 130 nesse caso, para você saber que foi
   parcial.
 
+## Padrões de escrita e complemento opcional para diagramas
+
+`templates/page-tone-guide.md` já aplica Diátaxis (tutorial / guia prático /
+referência / explicação) — o padrão usado por documentações como Kubernetes,
+GitLab e Django para não misturar tipos de conteúdo na mesma página — e
+`propor-organizacao.prompt.md` segue um fluxo em fases (descoberta → análise
+de valor → proposta → prestação de contas) para nunca consolidar/reescrever
+sem antes mapear o que é redundante de fato.
+
+Deliberadamente **não** instalamos nenhum marketplace de skills de terceiros
+neste kit (avaliei `tonsofskills.com`/`claude-code-plugins-plus-skills`,
+`daymade/claude-code-skills` e `claudemarketplaces.com`) — a maior parte do
+que oferecem é geração de PDF/DOCX/PPTX (fora do escopo aqui, já que
+publicamos direto no Confluence) ou catálogos de milhares de skills sem
+curadoria real. Uma exceção genuinamente útil, mas que fica a seu critério
+instalar (é código de terceiro, revise antes):
+
+- **Diagramas Mermaid nas páginas**: o Confluence não renderiza Mermaid cru.
+  Se uma página proposta incluir um diagrama, a skill `mermaid-tools` do
+  repositório [`daymade/claude-code-skills`](https://github.com/daymade/claude-code-skills)
+  converte o bloco Mermaid do rascunho em PNG antes de você anexar a
+  imagem à página manualmente. Instalação (avalie o código antes):
+  `/plugin marketplace add daymade/claude-code-skills` e depois instalar só
+  a skill `mermaid-tools`, não o pacote inteiro.
+
 ## Limitações conhecidas (leia antes de confiar 100% na extração)
 
 - A conversão de macros do Confluence para Markdown cobre os casos mais
